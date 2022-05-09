@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+set backspace=indent,eol,start
 filetype off                  " required
 
 syntax on
@@ -18,9 +19,9 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 " Colors---------------
 
-" Colors---------------
 " Rainbow Brackets
-Plugin 'frazrepo/vim-rainbow'
+" Plugin 'frazrepo/vim-rainbow'
+" Colors---------------
 
 " Nerd Tree
 Plugin 'preservim/nerdtree'
@@ -36,14 +37,18 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Git Plugins ================
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+" End Git Plugins =============
+
 Plugin 'tabnine/YouCompleteMe'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
+" Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
